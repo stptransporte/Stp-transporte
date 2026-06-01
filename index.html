@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portal de Capacitación STP</title>
+    <meta
+      name="description"
+      content="Portal de acceso educativo para conductores STP: curso de inclusión en el transporte público."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Navegación principal">
+        <a class="brand" href="#inicio" aria-label="Inicio Portal STP">
+          <span class="brand-mark">STP</span>
+          <span>
+            <strong>Transporte Inclusivo</strong>
+            <small>Portal de capacitación</small>
+          </span>
+        </a>
+        <div class="nav-actions">
+          <a href="#cursos">Cursos</a>
+          <a href="#flujo">Flujo</a>
+          <a href="#seguridad">Seguridad</a>
+          <a class="button button-light" href="#portal">Entrar al portal</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-copy">
+          <p class="eyebrow">Curso de Inclusión en el Transporte Público</p>
+          <h1>Capacitación clara, profesional y accesible para conductores STP.</h1>
+          <p>
+            Un portal educativo para aprender buenas prácticas, normativa,
+            empatía y toma de decisiones en situaciones reales del transporte
+            público, con acceso disponible en todo momento como parte de la
+            propuesta del proyecto.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="#portal">Ver prototipo</a>
+            <a class="button button-ghost" href="#flujo">Ver flujo completo</a>
+          </div>
+        </div>
+        <div class="hero-panel" aria-label="Resumen del portal">
+          <div class="mini-browser">
+            <div class="browser-top">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="login-card">
+              <h2>Acceso público demo</h2>
+              <label>
+                Usuario
+                <input value="Invitado STP" readonly />
+              </label>
+              <label>
+                Modo de acceso
+                <input value="Sin datos personales" readonly />
+              </label>
+              <button>Entrar al prototipo</button>
+              <a href="#seguridad">Ver enfoque de seguridad</a>
+            </div>
+          </div>
+          <div class="hero-stats">
+            <span><strong>8</strong> etapas</span>
+            <span><strong>100%</strong> certificable</span>
+            <span><strong>24/7</strong> disponible</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro-band">
+        <div>
+          <p class="eyebrow">Objetivo</p>
+          <h2>Un transporte público más inclusivo comienza con conductores mejor preparados.</h2>
+        </div>
+        <p>
+          La experiencia guía al usuario desde el login hasta la descarga del
+          certificado, con módulos cortos, simulación 360, evaluación final y
+          disponibilidad 24/7 para avanzar sin depender de horarios.
+        </p>
+      </section>
+
+      <section class="section academic-scope">
+        <div class="section-heading">
+          <p class="eyebrow">Alcance académico</p>
+          <h2>Propuesta pensada para funcionar como plataforma siempre disponible.</h2>
+          <p>
+            Para la presentación universitaria, el acceso 24/7 se plantea como
+            una característica del sistema: el conductor puede entrar cuando lo
+            necesite, retomar actividades y revisar su avance desde cualquier
+            dispositivo.
+          </p>
+        </div>
+        <div class="benefit-grid">
+          <div class="benefit-card">
+            <span>24/7</span>
+            <h3>Acceso permanente</h3>
+            <p>El curso estaría disponible fuera del horario laboral para facilitar la capacitación.</p>
+          </div>
+          <div class="benefit-card">
+            <span>Flexible</span>
+            <h3>Avance por etapas</h3>
+            <p>Los módulos permiten pausar, continuar y completar el proceso de forma ordenada.</p>
+          </div>
+          <div class="benefit-card">
+            <span>Certificado</span>
+            <h3>Cierre verificable</h3>
+            <p>Al finalizar, el usuario obtiene un certificado como evidencia del aprendizaje.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section security-band" id="seguridad">
+        <div class="section-heading">
+          <p class="eyebrow">Acceso público seguro</p>
+          <h2>La web puede ser visible para cualquier persona sin exponer datos ni servidores propios.</h2>
+          <p>
+            Para este prototipo universitario, la opción más segura es publicarlo
+            como sitio estático. Cualquier persona puede verlo, pero la página no
+            guarda RUT, contraseñas, correos ni respuestas reales.
+          </p>
+        </div>
+        <div class="security-grid">
+          <div>
+            <strong>Sin base de datos</strong>
+            <span>No existe información sensible almacenada.</span>
+          </div>
+          <div>
+            <strong>Sin backend propio</strong>
+            <span>No se expone un servidor del equipo a internet.</span>
+          </div>
+          <div>
+            <strong>Modo invitado</strong>
+            <span>El acceso funciona como demostración abierta del flujo.</span>
+          </div>
+          <div>
+            <strong>Solo contenido público</strong>
+            <span>Ideal para entregar y presentar el proyecto académico.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section portal" id="portal">
+        <div class="section-heading">
+          <p class="eyebrow">Prototipo web</p>
+          <h2>Portal de acceso educativo</h2>
+          <p>Interactúa con las pestañas para revisar cada pantalla del flujo.</p>
+        </div>
+
+        <div class="portal-shell">
+          <aside class="step-list" aria-label="Pantallas del portal">
+            <button class="step-button active" data-screen="login">1. Login</button>
+            <button class="step-button" data-screen="recover">2. Recuperar</button>
+            <button class="step-button" data-screen="verify">3. Verificación</button>
+            <button class="step-button" data-screen="courses">4. Cursos</button>
+            <button class="step-button" data-screen="activities">5. Actividades</button>
+            <button class="step-button" data-screen="simulation">6. Simulación 360</button>
+            <button class="step-button" data-screen="results">7. Resultados</button>
+            <button class="step-button" data-screen="certificate">8. Certificado</button>
+          </aside>
+
+          <div class="screen-stage">
+            <article class="screen active" data-screen-panel="login">
+              <div class="screen-copy">
+                <span class="screen-number">Paso 1</span>
+                <h3>Acceso público al prototipo</h3>
+                <p>Ingreso como invitado para que cualquier persona pueda revisar el flujo sin usar datos reales.</p>
+              </div>
+              <form class="form-card">
+                <label>Usuario demo<input value="Invitado STP" readonly /></label>
+                <label>Estado<input value="Acceso abierto 24/7" readonly /></label>
+                <button type="button">Entrar como invitado</button>
+                <a href="#seguridad">No se solicitan datos personales</a>
+              </form>
+            </article>
+
+            <article class="screen" data-screen-panel="recover" id="recuperar">
+              <div class="screen-copy">
+                <span class="screen-number">Paso 2</span>
+                <h3>Recuperación simulada</h3>
+                <p>Esta pantalla muestra cómo sería el flujo, pero en el prototipo público no envía ni almacena datos.</p>
+              </div>
+              <form class="form-card">
+                <label>Usuario demo<input placeholder="Invitado STP" /></label>
+                <label>Correo opcional<input placeholder="No requerido en demo" /></label>
+                <button type="button">Simular envío</button>
+              </form>
+            </article>
+
+            <article class="screen" data-screen-panel="verify">
+              <div class="screen-copy">
+                <span class="screen-number">Paso 3</span>
+                <h3>Verifica tu identidad</h3>
+                <p>Validación por código enviado al correo registrado.</p>
+              </div>
+              <form class="form-card">
+                <label>Ingrese código<input placeholder="000 000" /></label>
+                <button type="button">Continuar</button>
+              </form>
+            </article>
+
+            <article class="screen" data-screen-panel="courses" id="cursos">
+              <div class="screen-copy">
+                <span class="screen-number">Paso 4</span>
+                <h3>Lista de cursos</h3>
+                <p>Vista simple con progreso general y estado por módulo.</p>
+              </div>
+              <div class="course-grid">
+                <div class="course-card completed">
+                  <span>Completado</span>
+                  <h4>Fomentar empatía y eliminar prejuicios</h4>
+                  <button>Abrir</button>
+                </div>
+                <div class="course-card current">
+                  <span>En progreso</span>
+                  <h4>Uso de espacios reservados Módulo 1</h4>
+                  <button>Continuar</button>
+                </div>
+                <div class="course-card">
+                  <span>No iniciado</span>
+                  <h4>Toma de decisiones en situaciones reales</h4>
+                  <button>Comenzar</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="screen" data-screen-panel="activities">
+              <div class="screen-copy">
+                <span class="screen-number">Paso 5</span>
+                <h3>Actividades de módulo</h3>
+                <p>Contenido ordenado por experiencias, normativa y evaluación.</p>
+              </div>
+              <div class="activity-list">
+                <div><strong>Actividad 1:</strong> Reconocer espacios prioritarios <span>Completada</span></div>
+                <div><strong>Actividad 2:</strong> Normativa vigente <span>Completada</span></div>
+                <div><strong>Actividad 3:</strong> Buenas prácticas <span>En progreso</span></div>
+                <div><strong>Actividad 4:</strong> Evaluación de módulo <span>Pendiente</span></div>
+              </div>
+            </article>
+
+            <article class="screen" data-screen-panel="simulation">
+              <div class="screen-copy">
+                <span class="screen-number">Paso 6</span>
+                <h3>Simulación 360</h3>
+                <p>Escenario de toma de decisiones dentro del bus.</p>
+              </div>
+              <div class="simulation-box">
+                <div class="bus-window">
+                  <div class="prompt">
+                    <strong>Situación:</strong> Una persona mayor sube al bus y no hay asientos disponibles.
+                  </div>
+                </div>
+                <div class="answer-grid">
+                  <button>A. Ofrecer mi asiento</button>
+                  <button>B. Esperar a que alguien más actúe</button>
+                  <button>C. No hacer nada</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="screen" data-screen-panel="results">
+              <div class="screen-copy">
+                <span class="screen-number">Paso 7</span>
+                <h3>Resultados y examen</h3>
+                <p>Feedback inmediato y puntaje final del curso.</p>
+              </div>
+              <div class="result-card">
+                <div>
+                  <span class="check">✓</span>
+                  <h4>¡Respuesta correcta!</h4>
+                  <p>El conductor debe mantener la calma y analizar la seguridad de los pasajeros.</p>
+                </div>
+                <div class="score">
+                  <span>Examen final</span>
+                  <strong>10/10</strong>
+                </div>
+              </div>
+            </article>
+
+            <article class="screen" data-screen-panel="certificate">
+              <div class="screen-copy">
+                <span class="screen-number">Paso 8</span>
+                <h3>Certificado y siguiente paso</h3>
+                <p>Finalización del curso y descarga de certificación aprobada.</p>
+              </div>
+              <div class="certificate-card">
+                <h4>¡Felicitaciones!</h4>
+                <p>Has completado exitosamente el curso de Inclusión en el Transporte Público.</p>
+                <ul>
+                  <li>Certificación aprobada</li>
+                  <li>Para conductores de transporte público</li>
+                  <li>Descarga disponible</li>
+                </ul>
+                <button>Descargar certificado</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section flow" id="flujo">
+        <div class="section-heading">
+          <p class="eyebrow">Flujo completo</p>
+          <h2>Arquitectura de la experiencia</h2>
+        </div>
+        <div class="flow-grid">
+          <div class="flow-step"><span>1</span><strong>Acceso demo</strong><p>Ingreso abierto como invitado.</p></div>
+          <div class="flow-step"><span>2</span><strong>Recuperación simulada</strong><p>Ejemplo visual sin envio de datos reales.</p></div>
+          <div class="flow-step"><span>3</span><strong>Verificación</strong><p>Código enviado al correo.</p></div>
+          <div class="flow-step"><span>4</span><strong>Cursos</strong><p>Progreso general y módulos.</p></div>
+          <div class="flow-step"><span>5</span><strong>Actividades</strong><p>Lecciones y evaluación.</p></div>
+          <div class="flow-step"><span>6</span><strong>Simulación</strong><p>Decisiones en escenario real.</p></div>
+          <div class="flow-step"><span>7</span><strong>Examen</strong><p>Resultado y explicación.</p></div>
+          <div class="flow-step"><span>8</span><strong>Certificado</strong><p>Descarga y cierre del curso.</p></div>
+        </div>
+      </section>
+
+      <section class="section reference">
+        <div class="section-heading">
+          <p class="eyebrow">Referencia visual</p>
+          <h2>Material recibido</h2>
+        </div>
+        <div class="reference-grid">
+          <figure>
+            <img src="./assets/flujo-completo.jpg" alt="Flujo completo del portal de capacitación" />
+            <figcaption>Infografía del flujo completo</figcaption>
+          </figure>
+          <figure>
+            <img src="./assets/wireframe.jpg" alt="Wireframe del portal de acceso educativo" />
+            <figcaption>Wireframe de pantallas</figcaption>
+          </figure>
+          <figure>
+            <img src="./assets/instagram-stp.jpg" alt="Perfil de Instagram Transporte Inclusivo STP" />
+            <figcaption>Identidad social STP</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <strong>Portal de Acceso Educativo</strong>
+      <span>Capacitación para Conductores STP</span>
+      <span>Un transporte público más inclusivo comienza contigo.</span>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
